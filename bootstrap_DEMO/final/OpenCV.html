@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- bootstrap 需要的 CSS framework 來源 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- bootstrap 需要的 JavaScript framework 來源 共3串 -->
+    <!-- <script src="https://kit.fontawesome.com/68f8681dba.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/9585fa9847.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 套用自己寫的 CSS 來源路徑 一律放在最下面 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資策會專題介紹</title>
+</head>
+<body>
+    		<!-- Navbar -->
+            <header>
+                <!-- NavBar 通常會使用 header 包起來 > 功用大概跟 footer 一樣 是常見大家習慣的網站結構 -->
+                <div class='container'>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                      <a class="navbar-brand" href="index.html"><img src='pictures/Doggo&David.jpg' height='165'></a>
+                      <!-- 加上logo 調整大小 直到適合 navbar -->
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <!-- Nav 通常使用個別的 <ul><li>包住導向連結的按鈕 -->
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item">
+                            <a class="nav-link" href="index.html">主頁</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="iii_project.html">資策會專題</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="selenium_scraping.html">我的爬蟲專案</a>
+                          </li>	
+                          <li class="nav-item">
+                            <a class="nav-link" href="contact.html">聯絡我</a>
+                          </li>			
+                        </ul>
+                      
+                      </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- 第二步 -->
+            <section id='intro'>
+                
+                <div class="jumbotron">
+                    <!-- CSS 寫在 CSS style.css 內 #intro .jumbotron 表示套至 id=intro 之下的 jumbotron -->
+                    <!-- 因為一個網站可能會用到許多 jumbtron 所以在外層加上 id 來指定特定jumbtron來套用CSS -->
+                    <!-- 一個灰色的 banner 由左至右 橫跨網頁背景 此練習 顯示在 navigator 之下 -->
+                    <div class='container'>
+                      <!-- contatiner 可以運行 Grid system web Layout 分為 12 column 
+                        由左到右自己依比例分配版面位置 -->
+                        <div class='row'>
+                            <div class='col-md-12'>
+                                <!-- web Layout 分為 12 column md > -->
+                                <h1 class="display-4">資策會專題</h1>
+                                <p class="lead">臉部辨識 身分驗證</p>
+                                <a class="btn btn-primary btn-lg" href="#" role="button">git 原始碼</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section id='second'>
+                <!-- 第四步 -->
+                <div class="container">
+                    <div class='row'>
+                          <div class='col-md-8 offset-md-2 text-center'>
+                              <!-- col-md-8 > 12 column 中使用 8 個 column -->
+                              <!-- text-center bootstrap 提供的屬性 置中 (預設都是置左) -->
+                              <h3>一起使用 Python 達成人臉辨識與身分驗證!!</h3>
+                              <div class='row'>
+                                <!-- 12 column 指定使用多少 column 排版之後
+                                     指定使用的部分可再次分為 12 column 排版 -->
+                                  <div class='col-md-4 text-center'>
+                                      <img src='pictures/Mug_shot__resume.png'>
+                                      <h5>David Lin 林庭暄</h5>
+                                  </div>
+                                  <div class='col-md-8 text-left'>
+                                      <p class='lead'>只要學過基礎的Pyhon語法,就能夠進行網頁爬蟲爬取需要的資料</p>
+                                      <p>你好！我叫David！2021年7月剛完成資策會AI課程訓練，這裡會說明我是如何透過Pyhont程式語言，搭配OpenCV與Dlib套件，達成人臉辨識與身分驗證！</p>
+                                      <p>寫程式的美妙在於可使用不同的方法，達成相同的目標。如果你也想進入軟體圈，成為一個軟體工程師，不妨考慮從Python程式語言開始上手，與我們一起在資訊的大海中徜徉！</p>
+                                  </div>
+                              </div>
+                          </div>
+                    <div>
+                </div>
+                
+            </section>
+            <section id='latest'>
+	        
+              <div class="container">
+                  <div class='row'>
+                        <div class='col-md-12 text-center'>
+                            <h3>專案介紹</h3>
+                            <div class='row'>
+
+                                <div class='col-md-6 text-center'>
+                                    <!-- 12 column 取 6 column 微調置中 -->
+                                    <div class='outer'>
+                                        <a href='OpenCV.html'>
+                                            <!-- 改為 git 爬取Dcard狗狗幣資訊 -->
+                                            <div class='upper'>
+                                              <img src='pictures/inner.png'>
+                                              <div class='innertext'>
+                                                  <span>快來試試看</span>
+                                                  <h4>OpenCV</h4>
+                                              </div>
+                                            </div>
+                                            <div class='lower'>
+                                                <h3>500+ 照片訓練成果</h3>
+                                                <!-- <span><i class="fas fa-map-marker-alt"></i> 彰化縣彰化市彰水路31號</span><br> -->
+                                                <!-- <span><i class="far fa-clock"></i> Nov 03, 2018 08:00PM</span> -->
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class='col-md-6 text-center'>
+                                    <!-- 12 column 取 6 column 微調置中 -->
+                                    <div class='outer'>
+                                        <a href='OpenCV_Dlib.html'>
+                                            <!-- 登入Instagram爬取狗狗圖片 -->
+                                            <div class='upper'>
+                                              <img src='pictures/inner.png'>
+                                              <div class='innertext'>
+                                                  <span>快來試試看</span>
+                                                  <h4>OpenCV Dlib</h4>
+                                              </div>
+                                            </div>
+                                            <div class='lower'>
+                                                <h3>20+ 照片訓練成果</h3>
+                                                <!-- <span><i class="fas fa-map-marker-alt"></i> 彰化縣彰化市建興路1號</span><br> -->
+                                                <!-- <span><i class="far fa-clock"></i> Nov 03, 2021 08:00PM</span> -->
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>						
+                            </div>
+                        </div>
+                  <div>
+              </div>
+          
+          </section>
+          <section id='email'>
+              <!-- 第五步 -->
+              <div class="container">
+                  <div class='row'>
+                        <div class='col-md-8 offset-md-2 text-center'>
+                            <h3>加入David Lin的Email List</h3>
+                        </div>
+                  </div>
+                  <div class='row'>
+                        <div class='col-md-8 offset-md-2 text-left'>		
+                          <p>讓我有最新更新便通知你吧！</p>        		  	
+                            <div class="input-group input-group-lg">
+                                <!-- bootstrap 找一個 input -->
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="你的信箱">
+                          </div>
+                          <a class="btn btn-primary btn-lg" href="#" role="button">提交</a>
+                        </div>
+                  </div>
+              </div>
+          
+          </section>
+          <footer>
+              
+              <div class="container">
+                  <div class='row'>
+                        <div class='col-md-4 text-left'>
+                            <img src='pictures/logo.jpg' width='85'>
+                            <p>想寫程式不知道如何開始嗎?快來跟我一起玩轉 Python 辨識人臉吧!!</p>
+                        </div>
+                        <div class='col-md-4 text-left'>
+                            <h4>連結</h4>
+                            <ul>
+                                <li><a href='index.html'>主頁</a></li>
+                                <li><a href='all.html'>最新消息</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href='faq.html'>常見問題</a></li>
+                                <!-- 這裡貼我的履歷回答? 貼簡短版本 -->
+                                <li><a href='contact.html'>聯絡我們</a></li>
+                            </ul>						  
+                        </div>
+                        <div class='col-md-4 text-left'>
+                            <h4>聯絡我</h4>
+                            <p>新北市新莊區<br>
+                               Phone: (02)29082929<br>
+                               Mobile Phone: 0963298869<br>
+                               E-Mail: <a href='mailto:boaz411133@gmail.com'>boaz411133@gmail.com</a>
+                            </p>
+                        </div>
+                  </div>
+              </div>	        
+          
+          </footer>
+          
+          <script src='js/script.js'></script>
+  </body>
+</html>    
